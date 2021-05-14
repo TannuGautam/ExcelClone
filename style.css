@@ -9,19 +9,20 @@ body{
 .menu-container{
     height: 4rem;
     background-color: lightpink;
+    /* padding-top: 1.5rem; */
+    display: flex;
+    align-items: center;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
-.formula-container{
+/* .formula-container{
     height: 2rem;
     background-color: lightcoral;
-}
+} */
 
-.grid-container{
-    border: 1px solid red;
-    height: calc(100vh - ( 4rem + 2rem + 2rem));
-    background-color: lightgreen;
-    overflow: auto;
-}
+
 
 /* sheets */
 .sheets-container{
@@ -67,6 +68,14 @@ body{
     background-color: white;
 }
 
+.grid-container{
+    position: relative;
+    /* border: 1px solid red; */
+    height: calc(100vh - ( 4rem + 2rem + 2rem));
+    background-color: darkgreen;
+    overflow: auto;
+}
+
 .box{
     height: 2rem;
     width:2rem;
@@ -79,12 +88,18 @@ body{
 }
 
 .grid{
-    background-color: blueviolet;
+    /* background-color: lightblue; */
+    left:2rem;
+    top:2rem;
+    position: absolute;
     /* display: flex; */
 }
 
 .top_row{
-    height: 2rem;
+    left: 2rem;
+    top: 0rem;
+    position: absolute;
+    height:2rem;
     display:flex;
 }
 
@@ -93,9 +108,69 @@ body{
     min-width:5rem;
     border: 1px solid black;
     text-align: center;
+    padding-top: 0.5rem;
 }
 
 .row{
     display: flex;
 }
 
+/* formula container */
+
+.formula-container{
+    height:2rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.address-input{
+    width: 4rem;
+}
+
+.formula-input{
+    width: calc(100vw - 6rem)
+}
+
+.formula-container*{
+    height: 70%;
+}
+
+.grid .row .cell{
+    background-color: white;
+}
+
+/* menu container */
+
+/* select{
+    width: 5rem;
+
+} */
+
+.menu-container *{
+    border: 1px solid;
+    height: 60%;
+}
+
+.font-size{
+    width: 21%;
+}
+
+.font-family{
+    width:5%;
+}
+
+.btn-container {
+    width: 21%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: center;
+}
+
+.btn-container>*{
+    width:30%;
+    height:80%;
+    text-align: center;
+    border: 1px solid black;
+}
