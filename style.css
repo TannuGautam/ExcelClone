@@ -7,14 +7,17 @@ body{
 }
 
 .menu-container{
-    height: 4rem;
-    background-color: lightpink;
+    height: 3rem;
+    background-color: rgba(182, 193, 255, 0.555);
     /* padding-top: 1.5rem; */
     display: flex;
     align-items: center;
     align-content: stretch;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap;
     flex-direction: row;
+    justify-content: space-around; */
+    gap:0.5rem;
+    padding-left: 0.5rem;
 }
 
 /* .formula-container{
@@ -72,7 +75,7 @@ body{
     position: relative;
     /* border: 1px solid red; */
     height: calc(100vh - ( 4rem + 2rem + 2rem));
-    background-color: darkgreen;
+    background-color: #641c0014;
     overflow: auto;
 }
 
@@ -153,14 +156,14 @@ body{
 }
 
 .font-size{
-    width: 21%;
+    width: 5%;
 }
 
 .font-family{
-    width:5%;
+    width:15%;
 }
 
-.btn-container {
+.bui-container {
     width: 21%;
     display: flex;
     justify-content: space-evenly;
@@ -168,9 +171,93 @@ body{
     align-items: center;
 }
 
-.btn-container>*{
+.bui-container>*{
     width:30%;
     height:80%;
     text-align: center;
     border: 1px solid black;
 }
+
+.align-container>*{
+    width:30%;
+    height:80%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.align-container{
+   
+    width: 21%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: center;    
+}
+
+.color-container {
+    /* min-width: 10%; */
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: stretch;
+    border: none;
+    /* flex-wrap: nowrap; */
+    /* flex-direction: row; */
+}
+
+.material-icons {
+border: none;
+}
+
+.color {
+    width: 60%;
+    height: 97%;
+}
+
+.bg-color
+{
+    width: 60%;
+    height: 97%;
+}
+
+
+.nos-container
+{
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    align-items: center;
+}
+
+.new
+{
+
+}
+
+.sheet {
+    min-width: 5rem;
+    border: 1px solid blue;
+    height: 100%;
+    background-color: gray;
+}
+.active{
+    background-color:white;
+}
+.active-btn{
+    background-color:rgba(128, 128, 128, 0.76);
+}
+
+/* new open save */
+.nos-container>*{
+    border:none;
+}
+
+.nos-container {
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border: none;
+}
+
